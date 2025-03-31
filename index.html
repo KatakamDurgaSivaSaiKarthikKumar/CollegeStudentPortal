@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Student Portal</title>
+<link rel="stylesheet" href="styles.css">
+<h2><Marquee>MIC COLLEGE OF TECHNOLOGY</Marquee></h2>
+</head>
+
+<body>
+<div class="container">
+<header>
+<h1>College Student Portal</h1>
+</header>
+<nav>
+<ul>
+<li><a href="#personal-information">Personal Information</a></li>
+<li><a href="#academics-information">Academics Information</a></li>
+<li><a href="#finance">Finance</a></li>
+<li><a href="#announcements">Announcements</a></li>
+<li><a href="#attendance">Attendance</a></li> 
+<li><a href="#supports-and-services">Supports and Services</a></li>
+<li><a href="#feedback">Feedback</a></li></ul>
+</nav>
+
+<image>
+<center>
+<img src="https://www.collegesamachar.com/uploads/colleges/gallery/122/1647951465mic-3.jpg" alt="">
+<div
+style="width: 100px;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center">
+</div>
+</image></center>
+
+
+<section id="personal-information">
+<h2><strong>Personal Information:</strong></h2>
+<form action="#" method="POST">
+<label for="fname"><strong>Name:</strong></label>
+<input type="text" id="fname" name="fname" value=""><br><br>
+<label for="studentid"><strong>Student ID:</strong></label>
+<input type="text" id="studentid" name="studentid" value=""><br><br>
+<label for="dob"><strong>Date of Birth:</strong></label>
+<input type="date" id="dob" name="dob"><br><br>  
+<label for="email"><strong>Email:</strong></label>
+<input type="text" id="email" name="email" value=""><br><br>
+<label for="password"><strong>Password:</strong></label>
+<input type="password" id="password" name="password" value=""><br><br>
+<label for="address"><strong>Address:</strong></label>
+<input type="text" id="address" name="address" value=""><br><br>
+<label for="mobileno"><strong>Mobile No:</strong></label>
+<input type="text" id="mobileno" name="mobileno" value=""><br><br>
+<center><input type="submit" value="Update Profile"></center>
+</form>
+</section>
+
+<section id="academics-information">
+<h2><strong>Academics Information:</strong></h2>
+<form>
+<h4>Choose Your Course:</h4>
+<input type="radio" id="diploma" name="course" value="Diploma">
+<label for="diploma">Diploma</label><br>
+<input type="radio" id="btech" name="course" value="B-Tech">
+<label for="btech">B-Tech</label><br>
+<input type="radio" id="mtech" name="course" value="M-Tech">
+<label for="mtech">M-Tech</label><br>
+<input type="radio" id="mba" name="course" value="MBA">
+<label for="mba">MBA</label><br>
+<input type="radio" id="mca" name="course" value="MCA">
+<label for="mca">MCA</label><br>
+
+
+<h4>Choose Your Branch</h4></p>
+<input type="radio"id="CSE"name="Choose_Your_Branch"value="CSE"
+<label for="CSE">CSE</label><br>
+<input type="radio"id="IT"name="Choose_Your_Branch"value="IT"
+<label for="IT">IT</label><br>
+<input type="radio"id="AIDS"name="Choose_Your_Branch"value="AIDS"
+<label for="AIDS">AIDS</label><br>
+<input type="radio"id="AIML"name="Choose_Your_Branch"value="AIML"
+<label for="AIML">AIML</label><br>
+<input type="radio"id="ECE"name="Choose_Your_Branch"value="ECE"
+<label for="ECE">ECE</label><br>
+<input type="radio"id="EEE"name="Choose_Your_Branch"value="EEE"
+<label for="EEE">EEE</label><br>
+<input type="radio"id="Mech"name="Choose_Your_Branch"value="Mech"
+<label for="Mech">Mech</label><br>
+<input type="radio"id="Civil"name="Choose_Your_Branch"value="Civil"
+<label for="Civil">Civil</label><br>
+
+<p><h4>Year and Semister</h4></p>
+<input type="radio"id="1st Year I Semister "name="Year_and_Semister"value="CSE"
+<label for="1st Year I Semister ">1st Year I Semister </label><br>
+<input type="radio"id="1st Year II Semister "name="Year_and_Semister"value="CSE"
+<label for="1st Year II Semister ">1st Year II Semister </label><br>
+<input type="radio"id="2nd Year I Semister "name="Year_and_Semister"value="CSE"
+<label for="2nd Year I Semister ">2nd Year I Semister </label><br>
+<input type="radio"id="2nd Year II Semister "name="Year_and_Semister"value="CSE"
+<label for="2nd Year II Semister ">2nd Year II Semister </label><br>
+<input type="radio"id="3rd Year I Semister "name="Year_and_Semister"value="CSE"
+<label for="3rd Year I Semister ">3rd Year I Semister </label><br>
+<input type="radio"id="3rd Year II Semister "name="Year_and_Semister"value="CSE"
+<label for="3rd Year II Semister ">3rd Year II Semister </label><br>
+<input type="radio"id="4th Year I Semister "name="Year_and_Semister"value="CSE"
+<label for="4th Year I Semister ">4th Year I Semister </label><br>
+<input type="radio"id="4th Year II Semister "name="Year_and_Semister"value="CSE"
+<label for="4th Year II Semister ">4th Year II Semister </label><br></p>
+
+
+<section id="finance">
+<h2><strong>Finance:</strong></h2>
+<form>
+College Fee: <mark>₹43,000 Per Year.</mark><br>
+<label><input type="radio" name="gender" value="male" onclick="displayFee('male')"> Male</label>
+<label><input type="radio" name="gender" value="female" onclick="displayFee('female')"> Female</label>
+</form>
+<div id="fee" class="fee-display"></div>
+<script>
+function displayFee(gender) {
+let fee = '';
+let image = '';
+if (gender === 'male') {
+fee = 'Hostel Fee for Male: ₹60,000 Per Year';
+image = '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvWXYQrdtIl2qAuZOvQppkjNnIfeYcCtGYew&s" alt="Male Hostel">';
+} else if (gender === 'female') {
+fee = 'Hostel Fee for Female: ₹68,000 Per Year';
+image = '<img src="https://www.mictech.edu.in/images/facilities/hostel4.jpg" alt="Female Hostel">';
+}
+document.getElementById('fee').innerHTML = fee + '<br>' + image;
+}
+</script>
+<h4>If fee has been paid, click on "Yes". Otherwise, click "No":</h4>
+<input type="radio" id="yes" name="fee_payment_status" value="Yes">
+<label for="yes">Yes</label><br>
+<input type="radio" id="no" name="fee_payment_status" value="No">
+<label for="no">No</label><br>
+</section>
+
+
+<section id="announcements">
+<h2><strong>Announcements:</strong></h2>
+<ul>
+<li>College Remains Closed on "09-03-2025" due to "Sunday".</li>
+<li>College Remains Closed on "08-03-2025" due to "Second Saturday".</li>
+<li>College Remains Closed on "31-03-2025" due to "Ramzan".</li>
+<li>"2nd Year II Semester" Mid-2 will start from "Third Week of April".</li>
+</ul>
+</section>
+
+
+<section id="supports-and-services">
+<h2><strong>Supports and Services:</strong></h2>
+<p>Mobile: XXXXXXXXXX</p>
+<p>Email: <a href="mailto:office@mictech.ac.in">office@mictech.ac.in</a></p>
+<p>Councelling Code :<b> "mictech" </b></p>
+
+<section id="feedback">
+<h2><strong>Feedback:</strong></h2>
+<label for="feedback"><strong></strong></label>
+<textarea id="feedback" name="Feedback" rows="5" cols="50"></textarea><br><br>
+</section>
+
+
+<br>
+<center><input type =submit value="submit"><center>
+
+
+</body>
+</html>
